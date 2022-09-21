@@ -11,6 +11,7 @@
 body,
 .left-side,
 .logo {
+    font-family: Tahoma, sans-serif;
     display: flex;
 }
 
