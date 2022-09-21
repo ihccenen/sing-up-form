@@ -8,6 +8,7 @@
     --bg-shadow: #dadadb;
     --border-input: #e5e7eb;
     --border-focus: #6950f5;
+    --invalid-color: #c03737;
 }
 
 @font-face {
@@ -116,6 +117,7 @@ fieldset {
 }
 
 input {
+    position: relative;
     font-size: 1rem;
     min-width: 30%;
     padding: 0.4rem;
@@ -127,6 +129,13 @@ input {
 input:focus {
     border: 1px solid var(--border-focus);
     box-shadow: 1px 1px 3px 1px var(--bg-shadow);
+}
+
+.diff-pwd {
+    font-size: 0.9rem;
+    display: flex;
+    position: absolute;
+    color: var(--invalid-color);
 }
 
 .bottom {
