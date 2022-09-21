@@ -4,7 +4,7 @@
     --font-color-light: #fff;
     --bg-light: #f9fafb;
     --bg-dark: #000;
-    --bg-btn: #596d48;
+    --bg-dark-green: #596d48;
     --bg-shadow: #dadadb;
     --border-input: #e5e7eb;
     --border-focus: #6950f5;
@@ -145,7 +145,13 @@ button {
     font-size: 1.1rem;
     color: var(--font-color-light);
     padding: 0.5em 3.15em;
-    background-color: var(--bg-btn);
+    background-color: var(--bg-dark-green);
     border-radius: 8px;
     border: none;
+}
+
+.bottom > p > a {
+    color: var(--bg-dark-green);
+    font-weight: 500;
+    text-decoration: none;
 }
