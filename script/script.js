@@ -1,13 +1,14 @@
 function checkPwdDiff() {
+    const textMessage = document.querySelector('.diff-pwd');
+
     if (confirmPwd.value === undefined) return;
 
     if (confirmPwd.value !== pwd.value) {
         confirmPwd.style.border = '1px solid red';
-        document.querySelector('.diff-pwd').textContent =
-            '* Password do not match';
+        textMessage.textContent = '* Password do not match';
     } else {
         confirmPwd.style.border = '';
-        document.querySelector('.diff-pwd').textContent = '';
+        textMessage.textContent = '';
     }
 }
 
