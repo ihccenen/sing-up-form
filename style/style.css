@@ -71,8 +71,10 @@ button {
 .logo::before {
     position: absolute;
     content: '';
-    height: 100%;
-    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
     background-color: var(--bg-dark);
     opacity: 0.5;
     z-index: -1;
