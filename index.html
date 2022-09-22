@@ -10,6 +10,10 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
         <script src="./script/script.js" defer></script>
     </head>
     <body>
@@ -97,6 +101,10 @@
                             autocomplete="new-password"
                             required
                         />
+
+                        <div class="material-symbols-outlined password">
+                            visibility
+                        </div>
                     </div>
                     <div>
                         <label for="confirm-password">Confirm Password</label>
@@ -107,13 +115,16 @@
                             autocomplete="new-password"
                             required
                         />
+                        <div class="material-symbols-outlined confirm-password">
+                            visibility
+                        </div>
                         <span class="diff-pwd"></span>
                     </div>
                 </fieldset>
             </section>
 
             <section class="bottom">
-                <button type="submit">Create Account</button>
+                <button type="submit" class="submit-btn">Create Account</button>
                 <p>Already have an account? <a href="#">Log-in</a></p>
             </section>
         </form>
