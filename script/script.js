@@ -1,7 +1,7 @@
 function checkPwdDiff() {
     const textMessage = document.querySelector('.diff-pwd');
 
-    if (confirmPwd.value === undefined) return;
+    if (confirmPwd.value === undefined || confirmPwd.value === '') return;
 
     if (confirmPwd.value !== pwd.value) {
         confirmPwd.style.border = '1px solid red';
@@ -22,3 +22,4 @@ const confirmPwd = document.getElementById('confirm-password');
 
 input.forEach((input) => input.addEventListener('invalid', changeBorders));
 confirmPwd.addEventListener('keyup', checkPwdDiff);
+pwd.addEventListener('keyup', checkPwdDiff);
