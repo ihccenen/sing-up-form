@@ -1,5 +1,5 @@
 :root {
-    --font-color-light: #fff;
+    --white: #fff;
     --bg-light: #f9fafb;
     --bg-dark: #000;
     --bg-dark-green: #596d48;
@@ -7,6 +7,7 @@
     --border-input: #e5e7eb;
     --border-focus: #6950f5;
     --invalid-color: #c03737;
+    --color-eye: #6e7275;
 }
 
 * {
@@ -64,7 +65,7 @@ button {
     width: 100%;
     margin-top: 13rem;
     padding: 0.1em 0;
-    color: var(--font-color-light);
+    color: var(--white);
     z-index: 1;
 }
 
@@ -88,7 +89,7 @@ button {
 .credit-img,
 .credit-img > a {
     margin-bottom: 1.2rem;
-    color: var(--font-color-light);
+    color: var(--white);
 }
 
 form {
@@ -121,6 +122,20 @@ fieldset {
     border: none;
 }
 
+fieldset > div {
+    position: relative;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
+    position: absolute;
+    top: 25.5px;
+    right: 4px;
+    border: none;
+    color: var(--color-eye);
+    cursor: pointer;
+}
+
 input {
     position: relative;
     font-size: 1rem;
@@ -147,10 +162,10 @@ input:focus {
     padding-left: 3.2em;
 }
 
-button {
+.submit-btn {
     margin: 1.7em 0;
     font-size: 1rem;
-    color: var(--font-color-light);
+    color: var(--white);
     padding: 0.5em 3.15em;
     background-color: var(--bg-dark-green);
     border-radius: 8px;
